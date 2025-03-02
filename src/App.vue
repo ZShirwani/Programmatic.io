@@ -1,243 +1,269 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-</script>
-
+<script setup></script>
 <template>
-  <nav
-    class="nav w-full text-white shadow-md text-xl font-extrabold ubpixel-antialiased fixed flex top-0 py-4 px-20 bg-gray-900 z-50 items-center"
-  >
-    <input type="checkbox" id="nav-check" />
-    <div class="nav-header flex items-center">
-      <RouterLink to="/" tag="img" class="w-10 h-10">
-        <img class="w-10" src="./assets/logo.png" />
-      </RouterLink>
-
-      <RouterLink to="/">Programmatics</RouterLink>
-    </div>
-    <div class="nav-btn items-center h-full flex justify-center">
-      <label for="nav-check" class="p-2">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-    <ul class="nav-list items-center list-none">
-      <li>
-        <router-link to="/">Home</router-link>
-      </li>
-      <divz
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></divz>
-      <li>
-        <router-link to="/about">About</router-link>
-      </li>
-      <div
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></div>
-      <li>
-        <router-link to="/team">Our Team</router-link>
-      </li>
-      <div
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></div>
-      <li>
-        <router-link to="/enroll">Enroll</router-link>
-      </li>
-      <div
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></div>
-      <li>
-        <router-link to="/volunteer">Volunteer</router-link>
-      </li>
-      <div
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></div>
-      <li>
-        <router-link to="/articles">Articles</router-link>
-      </li>
-      <div
-        class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
-      ></div>
-      <li class="items-center justify-center self-center w-8 h-8">
-        <router-link to="https://discord.gg/PGUc95ZRYk">
-          <img class="w-8" src="./assets/discord.png"
-        /></router-link>
-      </li>
-      <li class="items-center justify-center self-center w-8 h-8">
-        <router-link to="https://www.instagram.com/programmatics_official/">
-          <img class="w-8" src="./assets/instagram.png"
-        /></router-link>
-      </li>
-    </ul>
-  </nav>
-
-  <RouterView />
-  <footer class="bg-gray-800 text-white py-8 w-full bottom-0 footer">
-    <div class="">
-      <div class="flex justify-center gap-20 footer-div">
-        <div class="flex justify-center items-center gap-4">
-          <img
-            src="./assets/logo.png"
-            alt="Programmatic Logo"
-            class="w-10 h-10"
-          />
-          <div>
-            <h1 class="font-extrabold text-xl">Programmatic</h1>
-          </div>
-        </div>
-        <div class="flex gap-7 items-center justify-center">
-          <ul
-            class="flex gap-7 items-center justify-center link-list list-none"
+  <main class="bg--home irl flex-col justify-center text-center shadow-lg">
+    <h3
+      class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500 mb-3 font-extrabold text-7xl welcome"
+    >
+      Welcome to
+    </h3>
+    <h1
+      class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-blue-500 mb-3 font-extrabold text-8xl pb-2 name"
+    >
+      Programmatic
+    </h1>
+    <router-link to="/enroll"
+      ><button
+        class="bg-gray-600 hover:bg-gray-500 active:bg-gray-600 p-3 rounded shadow-md font-bold text-blue-300 m-8"
+        role="link"
+      >
+        Get Started &rarr;
+      </button></router-link
+    >
+  </main>
+  <hr class="mx-auto w-5/6 mb-24 border border-slate-400 mt-10" />
+  <article class="flex-col flex justify-center items-center">
+    <h2 class="text-8xl font-extrabold text-center text-white mt-5 mb-3 offer">
+      Who Are We?
+    </h2>
+    <hr class="mx-auto w-1/4 mb-20 border border-purple-700" />
+    <section class="flex flex-col justify-center gap-36">
+      <div class="flex justify-center">
+        <div class="flex justify-center flex-col">
+          <p
+            class="txt-custom-scr mt-2 mb-4 text-lg text-gray-300 justify-center text-center"
           >
-            <li>
-              <router-link to="/">Home</router-link>
-            </li>
-            <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
-            <li>
-              <router-link to="/about">About</router-link>
-            </li>
-            <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
-            <li>
-              <router-link to="/team">Our Team</router-link>
-            </li>
-            <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
-            <li>
-              <router-link to="/enroll">Enroll</router-link>
-            </li>
-            <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
-            <li>
-              <router-link to="/volunteer">Volunteer</router-link>
-            </li>
-            <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
-            <li>
-              <router-link to="/articles">Articles</router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="flex gap-12 justify-center items-center">
-          <h1 class="font-bold text-lg mt-1">Socials:</h1>
-          <router-link
-            href="https://www.instagram.com/programmatics_official/"
-            target="_blank"
-            rel="noopener noreferrer"
+            Programmatic is an organization dedicated to teaching prospective
+            students how to program. Computer science is a subject that is
+            growing more and more important by the day, and we want to make sure
+            that kids are able to explore and learn in this field. We want them to develop
+            important skills like algorithmic thinking.
+          </p>
+          <a
+            href="/about"
+            class="text-blue-300 transition hover:text-purple-300 duration-500 text-xl text-center justify-center"
+            >About →</a
           >
-            <img src="./assets/instagram.png" alt="Instagram" class="w-8 h-8" />
-          </router-link>
-          <router-link
-            href="https://discord.gg/PGUc95ZRYk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="./assets/discord.png" alt="Discord" class="w-7 h-8" />
-          </router-link>
-          <router-link href="mailto:programmaticteams@gmail.com">
-            <img src="./assets/gmail.png" alt="Gmail" class="w-8 h-7" />
-          </router-link>
         </div>
       </div>
-      <div>
-        <p class="text-center para text-white mb-5 pt-6">
-          Programmatic is an organization dedicated to teaching the next
-          generation of students the fundementals of computer science.
-        </p>
+    </section>
+  </article>
+  <hr class="mx-auto w-5/6 mb-24 border border-slate-400 mt-32" />
+  <article class="flex-col flex justify-center items-center">
+    <h2 class="text-8xl font-extrabold text-center text-white mt-24 mb-3 offer">
+      What Can We Offer?
+    </h2>
+    <hr class="mx-auto w-1/3 mb-24 border border-purple-700 mt-1" />
+    <section class="flex flex-col justify-center gap-36">
+      <div class="flex justify-center gap-24 items-center z-flex">
+        <div class="image-container">
+          <img class="w-custom-scr rounded" src="../assets/circuit.avif" alt="" />
+        </div>
+        <div>
+          <h2
+            class="txt-custom txt-title text-5xl font-extrabold py-5 text-white mt-1"
+          >
+            CS Classes
+          </h2>
+          <p class="txt-custom mt-4 py-1 mb-4 text-lg text-gray-300">
+            CS is an incredibly important subject that isn't taught to it's
+            fullest extent in most school districts. Computer science is the
+            driving force behind some of the most influential projects,
+            innventions, and applications in today's world, and now, more than
+            ever, it becomes crucial that this subject is explored and taught.
+            Programmatic offers 5 courses (with more on the way) for a variety
+            of skill levels.
+          </p>
+          <router-link
+            to="/enroll"
+            class="text-blue-300 transition hover:text-purple-300 duration-500 text-xl"
+            >Enroll →</router-link
+          >
+        </div>
       </div>
-    </div>
-  </footer>
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      <div class="flex justify-center gap-24 items-center z-flex z-flip">
+        <div>
+          <h2
+            class="txt-custom txt-title text-5xl font-extrabold py-5 text-white mt-1"
+          >
+            Volunteer
+          </h2>
+          <p class="txt-custom mt-4 mb-4 py-1 text-lg text-gray-300">
+            Want to help? Programmatic is the perfect spot for programmers and
+            developers who are interested in teaching computer science. Not only
+            can you gain experience in honing in your presentation and teaching
+            ability, you can earn volunteer ours, and teach the next generation
+            of students computer science. You can choose between 5 courses to
+            teach or work on expanding and developing Programmatic.
+          </p>
+          <a
+            href="/volunteer"
+            class="text-blue-300 transition hover:text-purple-300 duration-500 text-xl"
+            >Volunteer →</a
+          >
+        </div>
+        <div class="image-container">
+          <img class="w-custom-scr rounded" src="../assets/car.png" alt="" />
+        </div>
+      </div>
+    </section>
+  </article>
+  <hr class="mx-auto w-5/6 mb-24 border border-slate-400 mt-32" />
+  <section class="flex flex-col justify-center mb-10 items-center">
+    <h4 class="text-center text-5xl font-extrabold text-white mt-1 mb-10">
+      Contact Us
+    </h4>
+    <p class="text-center text-2xl text-white m-5 contact">
+      Got questions? Reach out to us! We're here to answer your inquiries,
+      provide more information about our programming classes and volunteering
+      opportunities, and guide you through the exciting journey ahead.
+    </p>
+    <h5 class="text-2xl text-center text-white font-bold p-2 gmail">
+      programmaticteams@gmail.com
+    </h5>
+  </section>
 </template>
-<style>
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: "Segoe UI";
-}
 
-.nav > .nav-header {
-  flex: 0.95;
-  padding-left: 1rem;
+<style scoped>
+.contact {
+  width: 1200px;
+  max-width: 1200px;
+  margin-top: 0;
 }
-
-.nav > .nav-list {
-  display: flex;
-  gap: 2rem;
+.w-custom-scr {
+  width: 500px;
+}
+.txt-custom-scr {
+  width: 880px;
 }
 
-.nav > #nav-check {
-  display: none;
+.bg--home {
+  background-image: url("https://images.unsplash.com/photo-1625535163131-9d1fc30ea5f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2664&q=80");
+  background-repeat: no-repeat;
+  width: calc(100vw - (100vw - 100%));
 }
-@media (max-width: 1280px) {
-  .nav-list {
-    margin-top: 28px;
+
+.image-container {
+  display: inline-block;
+  position: relative;
+  /* Required for positioning the light effect */
+}
+
+.image-container img {
+  border: 10px transparent;
+
+  box-shadow: 0 0 20px rgba(131, 1, 131, 0.7);
+
+  transition: box-shadow 0.75s ease-in-out;
+}
+
+.image-container:hover img {
+  box-shadow: 0 0 30px rgb(100, 0, 128);
+}
+
+@media (max-width: 1630px) {
+  .txt-custom {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .w-custom-scr {
+    width: 400px;
   }
 
-  .nav-list > li {
-    margin-top: 0.5rem !important;
+  .contact {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .txt-custom {
+    width: 400px;
   }
 
-  .nav {
-    padding-left: 0px !important;
+  .contact {
+    width: 600px;
   }
-  .nav > .nav-btn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding-top: 0.2rem;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-list {
-    position: absolute;
-    display: flex;
+
+  .z-flex {
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
-    /* find a darker color */
-    background: rgb(31, 41, 55);
-    height: 0;
-    transition: all 0.3s ease-in;
-    top: 40px;
-    left: 0;
-    overflow: hidden;
+    text-align: center;
   }
-  .nav > .nav-list > li {
-    width: 100%;
-    margin-top: 1.5rem;
+
+  .z-flip {
+    flex-direction: column-reverse;
   }
-  .nav > #nav-check:checked ~ .nav-list {
-    margin-top: 30px;
-    height: calc(100vh - 50px);
+
+  .txt-title {
+    padding-bottom: 0.1rem;
+  }
+
+  .txt-custom-scr {
+    width: 680px;
   }
 }
 
-.para {
-  font-size: clamp(0.7rem, 1.5vw, 1rem);
+@media (max-width: 800px) {
+  .name {
+    font-size: 4rem;
+  }
+
+  .welcome {
+    font-size: 2.5rem;
+  }
+
+  .txt-custom-scr {
+    width: 450px;
+  }
+
+  .contact {
+    width: 400px;
+  }
+
+  .name {
+    font-size: 3.5rem;
+  }
+
+  .offer {
+    font-size: 4rem;
+  }
+
+  .gmail {
+    font-size: 1rem;
+  }
 }
 
-@media screen and (max-width: 1350px) {
-  .footer-div {
-    flex-direction: column;
+@media (max-width: 500px) {
+  .w-custom-scr {
+    width: 300px;
   }
-  /* .footer {
-    padding-bottom: 0;
-  } */
-}
-/* media for phone screens */
-@media screen and (max-width: 900px) {
-  .link-list {
-    flex-direction: column;
-    gap: 0.7rem !important;
+  .txt-custom {
+    width: 300px;
+  }
+  .name {
+    font-size: 3rem;
+  }
+
+  .welcome {
+    font-size: 2rem;
+  }
+
+  .txt-custom-scr {
+    width: 300px;
+  }
+
+  .contact {
+    width: 300px;
+  }
+
+  .name {
+    font-size: 2.5rem;
   }
 }
-/* media 500 */
 </style>
