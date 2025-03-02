@@ -23,13 +23,13 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
     <ul class="nav-list items-center list-none">
       <li>
-        <router-link to="/">Home</router-link>
+        <RouterLink to="/">Home</RouterLink>
       </li>
       <divz
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></divz>
       <li>
-        <router-link to="/about">About</router-link>
+        <RouterLink to="/about">About</RouterLink>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
