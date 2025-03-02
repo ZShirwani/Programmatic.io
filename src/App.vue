@@ -23,50 +23,50 @@ import { RouterLink, RouterView } from "vue-router";
     </div>
     <ul class="nav-list items-center list-none">
       <li>
-        <a href="/">Home</a>
+        <router-link to="/">Home</router-link>
       </li>
       <divz
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></divz>
       <li>
-        <a href="/about">About</a>
+        <router-link to="/about">About</router-link>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></div>
       <li>
-        <a href="/team">Our Team</a>
+        <router-link to="/team">Our Team</router-link>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></div>
       <li>
-        <a href="/enroll">Enroll</a>
+        <router-link to="/enroll">Enroll</router-link>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></div>
       <li>
-        <a href="/volunteer">Volunteer</a>
+        <router-link to="/volunteer">Volunteer</router-link>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></div>
       <li>
-        <a href="/articles">Articles</a>
+        <router-link to="/articles">Articles</router-link>
       </li>
       <div
         class="inline-block w-0.5 self-stretch bg-neutral-100 opacity-100 dark:opacity-50"
       ></div>
       <li class="items-center justify-center self-center w-8 h-8">
-        <a href="https://discord.gg/PGUc95ZRYk">
+        <router-link to="https://discord.gg/PGUc95ZRYk">
           <img class="w-8" src="./assets/discord.png"
-        /></a>
+        /></router-link>
       </li>
       <li class="items-center justify-center self-center w-8 h-8">
-        <a href="https://www.instagram.com/programmatics_official/">
+        <router-link to="https://www.instagram.com/programmatics_official/">
           <img class="w-8" src="./assets/instagram.png"
-        /></a>
+        /></router-link>
       </li>
     </ul>
   </nav>
@@ -90,49 +90,49 @@ import { RouterLink, RouterView } from "vue-router";
             class="flex gap-7 items-center justify-center link-list list-none"
           >
             <li>
-              <a href="/">Home</a>
+              <router-link to="/">Home</router-link>
             </li>
             <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
             <li>
-              <a href="/about">About</a>
+              <router-link to="/about">About</router-link>
             </li>
             <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
             <li>
-              <a href="/team">Our Team</a>
+              <router-link to="/team">Our Team</router-link>
             </li>
             <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
             <li>
-              <a href="/enroll">Enroll</a>
+              <router-link to="/enroll">Enroll</router-link>
             </li>
             <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
             <li>
-              <a href="/volunteer">Volunteer</a>
+              <router-link to="/volunteer">Volunteer</router-link>
             </li>
             <div class="bg-neutral-100 opacity-100 dark:opacity-50"></div>
             <li>
-              <a href="/articles">Articles</a>
+              <router-link to="/articles">Articles</router-link>
             </li>
           </ul>
         </div>
         <div class="flex gap-12 justify-center items-center">
           <h1 class="font-bold text-lg mt-1">Socials:</h1>
-          <a
+          <router-link
             href="https://www.instagram.com/programmatics_official/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="./assets/instagram.png" alt="Instagram" class="w-8 h-8" />
-          </a>
-          <a
+          </router-link>
+          <router-link
             href="https://discord.gg/PGUc95ZRYk"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src="./assets/discord.png" alt="Discord" class="w-7 h-8" />
-          </a>
-          <a href="mailto:programmaticteams@gmail.com">
+          </router-link>
+          <router-link href="mailto:programmaticteams@gmail.com">
             <img src="./assets/gmail.png" alt="Gmail" class="w-8 h-7" />
-          </a>
+          </router-link>
         </div>
       </div>
       <div>

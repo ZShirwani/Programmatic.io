@@ -11,13 +11,13 @@
     >
       Programmatic
     </h1>
-    <a href="/enroll"
+    <router-link to="/enroll"
       ><button
         class="bg-gray-600 hover:bg-gray-500 active:bg-gray-600 p-3 rounded shadow-md font-bold text-blue-300 m-8"
         role="link"
       >
         Get Started &rarr;
-      </button></a
+      </button></router-link
     >
   </main>
   <hr class="mx-auto w-5/6 mb-24 border border-slate-400 mt-10" />
@@ -73,10 +73,10 @@
             Programmatic offers 5 courses (with more on the way) for a variety
             of skill levels.
           </p>
-          <a
-            href="/enroll"
+          <router-link
+            to="/enroll"
             class="text-blue-300 transition hover:text-purple-300 duration-500 text-xl"
-            >Enroll →</a
+            >Enroll →</router-link
           >
         </div>
       </div>
