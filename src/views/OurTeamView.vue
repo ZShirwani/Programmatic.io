@@ -27,14 +27,6 @@ import BioCard from "../components/BioCard.vue";
         <section class="line"></section>
         <section class="flex flex-col gap-20 mt-36 mb-10 cards">
             <BioCard
-                name="Zyam"
-                pos="Founder, Web Developer"
-                desc="Hi, I'm Zyam. I've been working with JavaScript and web development for over two years and have been learning and working with Python and Java for the past year."
-                langs="JavaScript, Python, Java"
-                discord="hackaz"
-                imgurl="discord.png"
-            />
-            <BioCard
                 name="Ofir"
                 pos="Founder, Front-End Developer"
                 desc=" Hi, I'm Ofir and im the founder of Programmatics. I have over 5 years of coding experience in Python and recently started working with Unity and Dart, making many practical applications."
@@ -47,10 +39,17 @@ import BioCard from "../components/BioCard.vue";
                 desc="Hello, my name is Zain. I am looking forward to teaching you all about programming! Currently, I have 3 years of experience in both Python and Raspberry Pi."
                 langs="Python"
                 discord="@zaindaman"
-                pos="Founder"
+                pos="Founder, Electrical Engineer"
                 imgurl="discord.png"
             />
-
+            <BioCard
+                name="Zyam"
+                pos="Founder, Electrical Engineer"
+                desc="Hi, I'm Zyam. I've been working with circuits, Raspberry Pi, and Arduino for 3 years, with experience in Python, Java, and Javscript."
+                langs="JavaScript, Python, Java"
+                discord="@hackaz"
+                imgurl="discord.png"
+            />
             <BioCard
                 name="Adam"
                 desc="Hello, I'm Adam. I have about 4 years of experience in Unity and making video games."
